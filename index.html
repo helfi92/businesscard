@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IBM Programming Challenge</title>
+	<!-- css files -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+
+	<!-- external libraries-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">			
+			<!-- list of names -->
+			<section class="col-md-6">
+				<h4>List of Names</h4>	
+				<div class="list-container text-center">
+					<ul class="list-names" id="list">
+						
+					</ul>
+				</div>
+			</section>
+
+			<!-- business card -->
+			<section class="col-md-6">
+				<div>
+				<h4>Business Card</h4>
+				<div id="bcbg">
+				  <div class="container-card">
+				    <p id="bc-name" class="line1">Add Your Name</p>
+				    <p id="bc-title" class="line2">Enter your job title</p>
+				    
+				    <div class="contact">
+				    	<span id=""><a href="" id="bc-contact">yourname@example.com</a></span><br/>
+				      	<span id="bc-company" >IBM</span><br/>
+			    		<span id="bc-phone">###-###-####</span>
+				    </div>
+				  </div>  
+				</div>
+				</div>
+			</section>			
+		</div>		
+	</div>
+	<div  class="container instructions">
+		<div class="row">
+			<div class="col-xs-12 ">
+				<p class="">					
+					Features:<br>
+					<ul>
+						<li>Clicking on a user will show his/her business card</li>
+						<li>Clicking on the user email will initiate the mailto service</li>
+						<li>Mobile responsive</li>						
+					</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- scripts reference -->
+	<script src="assets/json/users.json"></script>
+	<script src="controller.js"></script>		
+</body>	
+
+
+</html>
